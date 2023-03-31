@@ -1,0 +1,20 @@
+{
+    "name": "Seismic Debug",
+    "description": "Switch seismic tenant use local resouce to debug",
+    "version": "1.0",
+    "manifest_version": 3,
+    "background": {
+        "service_worker": "background.js"
+    },
+    "permissions": [
+        "storage",
+        "activeTab",
+        "contextMenus"
+    ],
+    "icons": {
+        "16": "/images/seismic-debug16.png",
+        "32": "/images/seismic-debug32.png",
+        "48": "/images/seismic-debug48.png",
+        "128": "/images/seismic-debug128.png"
+    }
+}
