@@ -23,11 +23,12 @@ function getDebugUrl(url) {
 
 /* Main */
 chrome.runtime.onInstalled.addListener(() => {
+  const contexts = ["page"];
   chrome.contextMenus.create({
     type: "normal",
     id: "seismic.debug",
     title: "Seismic Debug",
-    contexts: ["page"],
+    contexts: contexts,
     documentUrlPatterns: ["https://*.seismic.com/*"],
   });
 });
