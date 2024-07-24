@@ -46,7 +46,7 @@ function getLDXVariabntDebugUrl(url) {
 function getLDXBatchDebugUrl(url) {
     const searchParams = url.searchParams;
     if (searchParams.has("seismic-batch-schedule-cdn")) {
-        searchParams.delete("cdseismic-batch-schedule-cdnn");
+        searchParams.delete("seismic-batch-schedule-cdn");
     } else {
         searchParams.append(
             "seismic-batch-schedule-cdn",
